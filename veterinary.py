@@ -7,6 +7,15 @@ class Client:
         self.direction = direction
         self.ticket = ticket
         self.petName=pet
+    def CrearCliente():
+        return "Cliente Creado"
+
+
+    def buscarCliente (pNombre):
+        return "Cliente Creado" +pNombre
+
+    def facturarCliente(pNombre)
+        return "Se facturo al cliente" +pNombre
 
 class Pet (Client):
     def _init_(self,clientName,cellphone,direction,ticket,pet,namePet,sintoms,food,antibiotics,veterenary):
