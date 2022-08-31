@@ -7,16 +7,17 @@ class Client:
         self.direction = direction
         self.ticket = ticket
         self.petName=pet
-    def CrearCliente():
+    def CreateClient():
         return "Cliente Creado"
 
 
-    def buscarCliente (pNombre):
+    def searchClient (pNombre):
         return "Cliente Creado" +pNombre
 
-    def facturarCliente(pNombre)
-        return "Se facturo al cliente" +pNombre
-
+    def ticketCliente(pNombre):
+        return "Se facturo al cliente" +pNombre+"$256556"
+    
+    
 class Pet (Client):
     def _init_(self,clientName,cellphone,direction,ticket,pet,namePet,sintoms,food,antibiotics,veterenary):
         super().__init__(clientName,cellphone,direction,ticket,pet)
@@ -25,6 +26,16 @@ class Pet (Client):
         self.food=food
         self.antibiotics=antibiotics
         self.veterenary =veterenary
+        
+    def createPet():
+        return "Pet Creado"
+
+
+    def searchPet (pNamePet):
+        return "Mascota encontrada" +pNamePet
+
+    def giveFoodPet(pNamepet,food,pNumber):
+        return "Useted ha ingresado" + pNamePet + "Comida:" + pNumber + " a la mascota"    
     
 class Antibiotics(Pet):
     def _init_(self,namePet,sintoms,food,antibiotics,veterenary,nameAntibiotic,antibioticBrand,antibioticAvailable,description,antibioticAmount):
@@ -34,6 +45,10 @@ class Antibiotics(Pet):
         self.antibioticAvailable=antibioticAvailable
         self.description=description
         self.antibioticAmaount= antibioticAmount
+        
+        
+        
+        
 
 class Veterenary(Pet):
     def _init_(self,namePet,sintoms,food,antibiotics,veterenary,veterenaryName,veterenaryRoom,veterenaryEspeciality,veterenaryCellphone,veterenarySchedule):    
@@ -43,8 +58,10 @@ class Veterenary(Pet):
      self.veterenaryEspeciality = veterenaryEspeciality
      self.veterenaryCellphone = veterenaryCellphone
      self.veterenarySchedule = veterenarySchedule
+        
+        
 
-class Veterenary(Pet):
+class Food(Pet):
     def _init_(self,namePet,sintoms,food,antibiotics,veterenary,foodName,foodBrand,foodConsume,foodAvailable,foodPetType):
      super().__init__(namePet,sintoms,food,antibiotics,veterenary)  
      self.foodName = foodName
@@ -52,7 +69,8 @@ class Veterenary(Pet):
      self.foodConsume = foodConsume 
      self.foodAvailable = foodAvailable
      self.foodPetType = foodPetType 
-
+    
+    
 
     
 
