@@ -46,9 +46,29 @@ class Antibiotics(Pet):
         self.description=description
         self.antibioticAmaount= antibioticAmount
         
+    def giveAntibiotic():
+    insert = int(input("Insert one coin at a time: ").strip())
+
+
+    antibitics = 50
+    total = antibitic- insert
+
+    while insert < antibitoic:
+        print("Amount due: ", total)
+        return
+    if insert == antibitotic:
+        print("Change Owed: ", total)
+        return
+    else:
+        print("Please insert the correct amount of: ", antibiotics)   
         
-        
-        
+    
+    def createAntibitic():
+        return "Creado Antibitco"
+
+
+    def searcAntibitic (pNameAntibiotic):
+        return "Antribitic:" +pNameAnntibitic
 
 class Veterenary(Pet):
     def _init_(self,namePet,sintoms,food,antibiotics,veterenary,veterenaryName,veterenaryRoom,veterenaryEspeciality,veterenaryCellphone,veterenarySchedule):    
@@ -58,8 +78,19 @@ class Veterenary(Pet):
      self.veterenaryEspeciality = veterenaryEspeciality
      self.veterenaryCellphone = veterenaryCellphone
      self.veterenarySchedule = veterenarySchedule
-        
-        
+       
+    def createVeterenary():
+        return "Veterenary Created"
+
+
+    def searcVeterenary (pNameVeterenary):
+        return "Veterenary:" + pNameVeterenary
+    
+    def callVeterinary(pNameVaeterenary,pVetemnerayRoom)
+        return "Tienes un llamado de emeregencia en " + pVeterenaryRoom+ "DR" +p
+            
+            
+      
 
 class Food(Pet):
     def _init_(self,namePet,sintoms,food,antibiotics,veterenary,foodName,foodBrand,foodConsume,foodAvailable,foodPetType):
@@ -69,6 +100,30 @@ class Food(Pet):
      self.foodConsume = foodConsume 
      self.foodAvailable = foodAvailable
      self.foodPetType = foodPetType 
+    
+    def createFood():
+        return "Food is created"
+
+
+    def searcAntibitic (pNameFood):
+        return "Food" +foodName
+            
+    def giveFood():
+    insert = int(input("Insert one coin at a time: ").strip())
+
+
+    dogfood = 50
+    total = dogfood- insert
+
+    while insert < dogfood:
+        print("Amount due: ", total)
+        return
+    if insert == dogfood:
+        print("Change Owed: ", total)
+        return
+    else:
+        print("Please insert the correct amount of: ", dogfood)   
+        
     
     
 
